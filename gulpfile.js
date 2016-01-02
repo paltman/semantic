@@ -75,6 +75,14 @@ gulp.task('xo', function xo() {
   return tasks.xo(config.xo.source);
 });
 
+gulp.task('optimize:js', function () {
+  return tasks.optimizejs(config.optimize.js.source, config.optimize.js.options, config.optimize.js.dist);
+});
+
+gulp.task('optimize:css', function () {
+  return tasks.optimizecss(config.optimize.css.source, config.optimize.css.options, config.optimize.css.dist);
+});
+
 /**
  * Compound Tasks
  */
@@ -100,4 +108,10 @@ gulp.task('build', gulp.series([
 gulp.task('default', gulp.series([
   'build',
   'watch'
+]));
+
+gulp.task('release', gulp.series([
+    'build',
+    'optimize:js',
+    'optimize:css'
 ]));

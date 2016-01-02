@@ -62,5 +62,17 @@ exports = module.exports = {
          'tasks/**/*.js',
          staticSource + '**/*.js'
        ]
-    }
+   },
+   optimize: {
+     css: {
+       source: staticDist + 'css/*.css',
+       options: {},
+       dist: staticDist + 'css/'
+     },
+     js: {
+       source: staticDist + 'js/*.js',
+       options: {},
+       dist: staticDist + 'js/'
+     }
+   }
 };

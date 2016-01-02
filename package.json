@@ -4,7 +4,7 @@
     "url": "https://github.com/pinax/pinax-project"
   },
   "scripts": {
-    "build": "NODE_PATH=. ./node_modules/.bin/gulp",
+    "build": "NODE_PATH=. ./node_modules/.bin/gulp release",
     "watch": "NODE_PATH=. ./node_modules/.bin/gulp",
     "test": "./node_modules/.bin/gulp test"
   },
@@ -35,9 +35,12 @@
     "gulp-cleanup": "^1.0.0",
     "gulp-compile-handlebars": "^0.6.1",
     "gulp-less": "^3.0.5",
+    "gulp-minify-css": "^1.2.3",
     "gulp-mocha": "^2.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-rev": "^6.0.1",
+    "gulp-size": "^2.0.0",
+    "gulp-uglify": "^1.5.1",
     "gulp-util": "^3.0.7",
     "gulp-xo": "^0.7.0",
     "vinyl-source-stream": "^1.1.0",

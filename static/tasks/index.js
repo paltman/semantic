@@ -21,7 +21,9 @@ const tasks = [
   'manifest',
   'cleanup',
   'copy',
-  'handlebars'
+  'handlebars',
+  'optimizejs',
+  'optimizecss'
 ];
 
 tasks.forEach(task => {
