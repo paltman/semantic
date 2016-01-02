@@ -1,3 +1,4 @@
+const templatePath = 'semantic/templates/';
 const staticRoot = 'static/';
 const staticSource = staticRoot + 'src/';
 const staticBuild = staticRoot + '_build/';
@@ -21,7 +22,7 @@ exports = module.exports = {
         ]
     },
     templates: {
-        destination: 'semantic/templates/',
+        destination: templatePath,
         manifestPath: staticBuild + 'manifest.json',
         scriptsTemplate: staticSource + 'hbs/_scripts.hbs',
         stylesTemplate: staticSource + 'hbs/_styles.hbs',
