@@ -9211,6 +9211,7 @@ return jQuery;
 }));
 
 },{}],2:[function(require,module,exports){
-window.jQuery = window.$ = require("jquery");
+/* global window */
+window.jQuery = window.$ = require('jquery');
 
 },{"jquery":1}]},{},[2]);

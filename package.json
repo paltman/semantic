@@ -4,8 +4,8 @@
     "url": "https://github.com/pinax/pinax-project"
   },
   "scripts": {
-    "build": "NODE_PATH=. ./node_modules/.bin/gulp --gulpfile=static/gulpfile.js",
-    "watch": "NODE_PATH=. ./node_modules/.bin/gulp --gulpfile=static/gulpfile.js",
+    "build": "NODE_PATH=. ./node_modules/.bin/gulp",
+    "watch": "NODE_PATH=. ./node_modules/.bin/gulp",
     "test": "./node_modules/.bin/gulp test"
   },
   "license": "",

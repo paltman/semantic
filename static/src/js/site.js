@@ -1,1 +1,2 @@
-window.jQuery = window.$ = require("jquery");
+/* global window */
+window.jQuery = window.$ = require('jquery');

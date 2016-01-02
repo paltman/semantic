@@ -13,11 +13,6 @@ module.exports = (entry, config) => {
   config.less = config.less || {};
   config.autoprefixer = config.autoprefixer || {};
 
-  config.less.paths = [
-    '../node_modules/bootstrap/less',
-    '../node_modules/font-awesome/less'
-  ];
-
   return gulp.src(entry)
     .pipe(less(config.less))
     .pipe(prefix(config.autoprefixer));
